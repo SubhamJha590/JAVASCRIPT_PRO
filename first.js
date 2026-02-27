@@ -8,7 +8,7 @@
 
 
 // can use single or double quote for printing 
-// its good practice to use ; at the end of line just like css 
+// its good practice to use ; at the end of line just like css (JavaScript has Automatic Semicolon Insertion (ASI), which means the engine often adds semicolons for you. but sometimes u dont need to put semicolon like in between complete block see very below)
 console.log('Hii my name is subham Jha');
 console.log("Hii dude how are u this is sjha empire");
 // in js no need to define datatype before variable declaration
@@ -41,6 +41,30 @@ console.log(isfollow);
 // 3. const :- variable cant be redeclared or updated . a block scope variable  
 
 // avoid always use of var as it creates confusion in big codes as it allowed redclaration and give errors so always use let and const based on need 
-let fullname ="SubhamJha"
+let fullname ="SubhamJha";
 console.log(fullname);
+
+
+
+
+// 1️⃣ JavaScript and Semicolons
+
+// In JavaScript:
+
+// Semicolons terminate statements, not blocks.
+
+// Blocks are groups of code inside { ... }.
+
+// You do NOT put a semicolon after if(...) { ... } or else { ... } because the block itself is not a statement, it’s a structure that contains statements.
+
+// Example:
+// let age = 28;
+
+// if (age > 18) {         // ✅ no semicolon here
+//     console.log("eligible"); // ✅ semicolon here (statement)
+// } else {                 // ✅ no semicolon here
+//     console.log("not eligible"); // ✅ semicolon here
+// }
+
+// ✅ Correct: semicolons after statements, not after control structures (if, for, while, else, function, etc.)
 
