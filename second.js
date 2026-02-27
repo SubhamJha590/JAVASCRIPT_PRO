@@ -1,7 +1,7 @@
 // can run multiple js files in single html page just remeber the seqence so i write multiple js files for separate learning can run while attaching separately or simlutaneously 
 
 // Primitive Types : 
-// Number, String, Boolean, Undefined, Null, BigInt
+// Number, String, Boolean, Undefined, Null, BigInt(see below)
 //  (example :- let x= Bigint("123");(capital B) if print typeof x u will get bigint and at last of 123 u go t a small n for Bigint), Symbol (example :- let y= Symbol("hello"); more about these on gpt (A symbol is just a unique identifier)) we can't mix any datatypes with each other without casting or conversion (A symbol is just a unique identifier)) we can't mix any datatypes with each other without casting or conversion
 // JavaScript has just one numeric data type called Number , and it represents both:
 // Integers → e.g., 10, -5, 1000
@@ -18,7 +18,23 @@ console.log(null_first);
 
 console.log("120"+1); // it will give 1201 means string concatenate with each other (+ operator does concatenation if any operand is a string.
 // JavaScript automatically converts the other operand to a string.
-// Other arithmetic operators (-, *, /) do NOT convert strings; they throw NaN(not a number ) if the string isn’t numeric.)
+// Other arithmetic operators (-, *, /) do NOT convert strings; they throw NaN(not a number ) if the string isn’t numeric but if numeric they also convert the string to numbers.
+
+Type coercion(it is implicit in nature done by itself) in JavaScript is the automatic or manual conversion of a value from one data type to another. and it is done bydefault in the case of -,/,* )
+type conversion(explicit) is manually 
+
+console.log("120"-1);
+console.log(Number("17")+17);// otherwise default behavior of number with string and + operator is concatenate (+ operator is special If either operand is string → concatenation Otherwise → numeric addition)
+
+
+
+
+
+
+
+
+
+
 
 // Non-primitive datatypes :- Object 
 // Object is a collection of key-value pairs.
@@ -139,3 +155,14 @@ console.log(!m);   // false
 
 
 
+// some extra 
+// bigint used
+// ✅ Method 1: Add n at the end (most common)
+// (1st way) let big = 12345678901234567890n;
+// console.log(big);
+
+// ✅ Method 2: Using BigInt() function
+// let big = BigInt(12345678901234567890);
+// console.log(big);
+// ⚠️ If passing a very large number, prefer string:
+// let big = BigInt("12345678901234567890");
