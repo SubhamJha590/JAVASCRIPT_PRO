@@ -1,0 +1,15 @@
+h1{
+    color: blue;
+    background-color: pink;
+}
+h4{
+    background-color: red;
+    color: white;
+}
+button{
+    color: green;
+    background-color: orange;
+}
+body{
+    background-color: lightgrey;
+}
