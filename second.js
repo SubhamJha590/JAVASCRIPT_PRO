@@ -17,18 +17,19 @@ let null_first=null; // variable is decalred and value is null
 console.log(null_first);
 
 console.log("120"+1); // it will give 1201 means string concatenate with each other (+ operator does concatenation if any operand is a string.
-// JavaScript automatically converts the other operand to a string.
-// Other arithmetic operators (-, *, /) do NOT convert strings; they throw NaN(not a number ) if the string isn’t numeric but if numeric they also convert the string to numbers.
+// The + operator performs string concatenation if either operand is a string, converting the other operand to a string. Other arithmetic operators like -, *, and / perform numeric coercion and return NaN if the string cannot be converted to a number.
 
-Type coercion(it is implicit in nature done by itself) in JavaScript is the automatic or manual conversion of a value from one data type to another. and it is done bydefault in the case of -,/,* )
-type conversion(explicit) is manually 
+// Type coercion(it is implicit in nature done by itself) in JavaScript is the automatic or manual conversion of a value from one data type to another. and it is done bydefault in the case of -,/,* )
+// type conversion(explicit) is manually 
 
 console.log("120"-1);
 console.log(Number("17")+17);// otherwise default behavior of number with string and + operator is concatenate (+ operator is special If either operand is string → concatenation Otherwise → numeric addition)
-
-
-
-
+// | Expression  | Result   | Why               |
+// | ----------- | -------- | ----------------- |
+// | `"120" + 1` | `"1201"` | concatenation     |
+// | `"120" - 1` | `119`    | numeric coercion  |
+// | `"abc" - 1` | `NaN`    | conversion failed |
+// | `"abc" + 1` | `"abc1"` | concatenation     |
 
 
 
