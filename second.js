@@ -17,7 +17,7 @@ let null_first=null; // variable is decalred and value is null
 console.log(null_first);
 
 console.log("120"+1); // it will give 1201 means string concatenate with each other (+ operator does concatenation if any operand is a string.
-// The + operator performs string concatenation if either operand is a string, converting the other operand to a string. Other arithmetic operators like -, *, and / perform numeric coercion and return NaN if the string cannot be converted to a number.
+// The + operator performs string concatenation if either operand is a string, converting the other operand to a string. Other arithmetic operators like -, *, and / perform numeric coercion(is a type of type coercion) and return NaN if the string cannot be converted to a number.
 
 // Type coercion(it is implicit in nature done by itself) in JavaScript is the automatic or manual conversion of a value from one data type to another. and it is done bydefault in the case of -,/,* )
 // type conversion(explicit) is manually 
@@ -71,35 +71,6 @@ console.log(student["age"]);
 student["name"]="rahuldon"; // and these chanes also reflect in original object 
 console.log(student["name"]);
 console.log(student);
-
-// some knowledge 
-/*
-
-1️⃣ Stored By Value (Primitives)
-
-Primitives: number, string, boolean, undefined, null, symbol, bigint
-When you assign a primitive to a variable, JS stores the actual value in memory.
-Changing the new variable does not affect the original.
-
-2️⃣ Stored By Reference (Objects)
-
-Objects, Arrays, Functions are stored by reference.
-The variable doesn’t store the object itself, it stores a pointer (address) to the object in memory.
-Changing the object using any reference affects the original. 
-
-The variable does not store the actual object.
-Instead, it stores a memory address (like a pointer) where the object is kept.
-
-also for objects if we use const in front of object name then again we can make chnages to their keys bcs mkaing changes in key dont make chnages in object as object is a whole collection 
-
-const protects the reference, not the object itself
-You cannot assign a new object to the variable
-You can change properties inside the object
-
-The variable student always points to the same memory address.
-You cannot reassign student to a completely new object
-BUT the contents (keys/values) of the object can be changed, because you are modifying the object at that memory address, not changing the reference itself.
-*/
 
 
 //for single line comment //

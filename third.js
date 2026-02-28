@@ -42,9 +42,11 @@ console.log(result);
 // here not matches if use === but if use == matchs 
 
 
+
+// but this prompt is only in console terminal not for node js terminal because prompt is a browser api not run in outsude terminals like node js 
+
 // this is how to take a input from user through prompt fn using prompt("any message"); if in string then "" if number then direct and can store it in a variable
-prompt(1000);
-input=prompt("enter a number");// anything written inside prompt is visible to prompt not for storing for storing it gives a valid space or input option and then can store it in a variable 
+input=prompt("enter a number");// anything written inside prompt is visible to prompt just to give a idea
 console.log(input);
 
 // prompt always return a string so for number we need to convert it in using Number (capital N)
@@ -60,7 +62,10 @@ input3=prompt("Enter number 3 ");
 console.log(typeof input3);  // its type is string
 
 
-ranom=String(29);  // for type casting always use Big letter starting
+
+// for type casting always use Big letter starting
+ranom=String(29);  
 console.log(ranom);
 console.log(typeof ranom);
 
+// we can write mutliple things in console.log("heloo",28,"shshhssh"); just by having comma with it 
