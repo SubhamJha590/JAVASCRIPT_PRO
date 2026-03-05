@@ -26,7 +26,7 @@ add_two(59,10);  // this is called function call or function invoke
 // function can also return value rather than printing it can dirctly return by using a return keyword 
 
 function add_three(a,b,c){
-    return a+b+c;  // we can also write expression in return or can single value but whatever u write it always written a single value whether after calculating that expression or array etc ...we can store expressions in variable then return that variable directly (but take care of that u cant return statements (ex :- return let x = 10;  return if (a > 5) {  console.log("Hi");}), return for (let i = 0; i < 5; i++) { }, return function myFunc() { }  ), we can return strings but within a quote as normal syntax like return "Hello world";
+    return a+b+c;  // we can also write expression in return or can single value but whatever u write it always return a single value whether after calculating that expression or array etc ...we can store expressions in variable then return that variable directly (but take care of that u cant return statements (ex :- return let x = 10;  return if (a > 5) {  console.log("Hi");}), return for (let i = 0; i < 5; i++) { }, return function myFunc() { }  ), we can return strings but within a quote as normal syntax like return "Hello world";
 
     // A function can execute many statements or expressions inside it, but it can return only ONE value at the end.
 
@@ -39,6 +39,9 @@ function add_three(a,b,c){
 //console.log(a); //here u get a is not defined bcs a is function parameters and they are local variables always alive inside the function they do not exist outside the function 
 /*
 In function parameters, you do NOT use any reserved keywords (let, var, const) to declare variables.
+
+We don’t use let, var, or const for parameters because the function automatically creates those variables to receive input values function automatically declares that variables for receiving inputs that is not lik normal declartion of variable(like we declare new variable there we use let, var , const).
+
 ✅ Function parameters are automatically treated as local variables
 
 function demo(a, b) { // Using reserve keywords inside function parameters is WRONG. like demo(let a , let b) this is wrong just write direct as they are treated always as local variables but inside function block you should use reserved keyword always
@@ -59,7 +62,7 @@ console.log(a);
 
 /*
 let and const having blocked scope but if declared outside block treated as normally but cant attached to window (just for info )
-and any {} is a block means function also having their block so we can use let and const inside function block but  again there scope is limited to that block as the are blocked scope 
+and any {} is a block means function also having their block so we can use let and const inside function block but  again there scope is limited to that block as they are blocked scope 
 
 for var it is functioned scope 
 
@@ -118,15 +121,5 @@ console.log(d);
 //console.log(p);  
 //here u get p is not defined bcs a is function parameters and they are local variables always alive inside the function they do not exist outside the function they are functioned scope
 /*
-In function parameters, you do NOT use any reserved keywords (let, var, const) to declare variables.
-✅ Function parameters are automatically treated as local variables
 
-function demo(a, b) { // Using reserve keywords inside function parameters is WRONG. like demo(let a , let b) this is wrong just write direct as they are treated always as local variables but inside function block you should use reserved keyword always
-
-    let c = 10;   // must use let/const/var
-    const d = 20;  // must use let/const/var
-
-    return a + b + c + d;
-}
-    */
 
