@@ -1,4 +1,4 @@
-// in js function can be passed as a parametr to another function and one function can returned in another function 
+// in js function can be passed as a parameter to another function and one function can returned in another function 
 
 // ⭐ A function that is passed(as a argument) to another function  to be executed later.
 // BASIC EXAMPLE OF CALLBACK 

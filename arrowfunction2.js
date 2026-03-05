@@ -5,7 +5,7 @@ function sum(a,b){
 let z=sum(1,2);
 console.log(z);
 
-// This is called arrow functions writing way synatx no space between =>
+// This is called arrow functions writing way syntax no space between =>
 
 // here arrow function is the rhs part starting from (a,b)...
 const sum1= (a,b)=>{   // here const sum1 here it is a variable which is storing the function (and name of this variable treated as same as name of function for calling and all as for calling and argument passing we need function name so thats why we define in normal function as well as in arrow functions otherwise later we study there are some callback function that automatically call itself there is no need of function there directly using arrow function for clean and clear code )
@@ -36,7 +36,7 @@ morning();
 // having one paramter 
 
 const square = x =>{
-    return x*x;
+    return x*x; // or can be directly written by the side of arrow just by removing {} and return keyword
 }
  let f= square(9);
  console.log(f);
