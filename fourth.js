@@ -8,7 +8,7 @@ console.log(i);
 x=i++;
 console.log(x);
 
-// same like ==i 
+// same like ++i 
 let j=1;
 let y=++j; // here how internal works (first j=j+1 then y=j)
 console.log(y);
@@ -74,3 +74,19 @@ let q=1;
 console.log(++q);
 console.log(q);
 
+
+
+// most important logic 
+
+// always understand that here console.log(b) and console.log(i++); both are differnt because b is a variable that stores the value of returned by i++ at that instance its like a permanent storage but i++ returns based on the current moment 
+
+
+// let i=18;
+// let b=i++; // it does two operations what that it first b=i, then i=i+1 then i becomes 19
+// let c=++i; // here it stores 20 a storage permanent (it also do 2 operations i=i+1, then c=i thats means 20)
+// console.log(b); // 18 here 18 is output permanent storage
+// console.log(i++); // it return original value like for now its been 20 so here 20 and i becomes 21
+// console.log(++i); // here 22
+// console.log(c); //20
+
+// this is the actual process of thinking as a programmer 

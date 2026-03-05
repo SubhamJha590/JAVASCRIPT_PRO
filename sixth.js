@@ -35,4 +35,14 @@ for(let key in obj1){ // can put any name in place of key like i,j its understoo
     console.log("keys = ",key,"values =",obj1[key]); // here if u try to find through dot notation(like obj1.key) then it will try to find as it is which will not get and in sqaure brackets (like obj1['key']) not put quotes then again same issue as key here is a variable that stores value of keys in it and item before of in for of loop also a variable that stores iterable things simply write obj1[key] it will auomatically put and print all possible values of key.
 };
 
+// for in loop is also used for indexes od array (its mainly for keys and indexes not values but we can use the key to access the value. 
+// Yes, we can get values of an object using for...in, but first it gives the key and then we access the value using object[key].
+// for...of → loops through values one by one 
+// for...in → loops through keys/indexes one by one)
+
+let arr1=[10,20,30,40,50];
+for(let index in arr1){
+    console.log(index);// it will return indexes of each element
+}
+
 // after this go to functions 

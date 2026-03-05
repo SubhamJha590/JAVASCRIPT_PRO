@@ -6,7 +6,7 @@ let marks=300;
 if (marks>=30){
     console.log("You are passed");
 }
-// if is independent not required else if is itself a complet block will run only when condition becomes true if nothing is defined in else block nothing will show when if condition doesnt matches
+// if is independent not required else, if is itself a complete block will run only when condition becomes true if nothing is defined in else block nothing will show when if condition doesnt matches
 
 // 2. if-else block
 if (marks>20 && marks <50){
@@ -39,7 +39,7 @@ console.log("from here ternary opeartors are in the game ")
 name1="23";
 result= (name1===23)? "Yes name matches" : "Not matches";
 console.log(result);
-// here not matches if use === but if use == matchs 
+// here not matches if use === but if use == matches 
 
 
 
