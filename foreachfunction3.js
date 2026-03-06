@@ -40,16 +40,39 @@ function print(val){
 arr.forEach(print);
 /*
 ✅ Why don’t we write print() ourselves?
-Because forEach calls the function for us
+Here, forEach expects a function as its argument. It will call that function for every element of the array.(when you use forEach, you pass a function reference, not the result of calling the function. That’s why you write print instead of print() this is called callback definition)
 
 You only pass the function name: 
 fruits.forEach(print);
 
-But JavaScript internally does something like this:
-for (let i = 0; i < arr.length; i++) {
-    print(arr[i]);   // <-- this is where callback is called
+But JavaScript internally foreach is defined in such a way:
+Example implementation:
+Array.prototype.forEach = function(callback){
+    for(let i = 0; i < this.length; i++){
+        callback(this[i]);   // here print got value one by one
+    }
 }
-👉 The () is added inside forEach, not by us. and JavaScript takes care of calling print() for every element. */
+Example usage:
+let arr = [1,2,3];
+function print(val){
+    console.log(val);
+}
+arr.forEach(print);
+
+👉 The () is added inside forEach, not by us. and JavaScript takes care of calling print() for every element.
+So forEach automatically calls print() and passes each element (1,2,3,4,5) as val. */
+// Yes, forEach is a function, but more specifically it is an array method in JavaScript.
+// That means it is a function that belongs to the Array object.
+
+// is just the name of a parameter (a variable). It stores the function that you pass to forEach.
+// It is called callback because: It is a function that is called back later by another function.
+// You give a function → forEach stores it → forEach calls it later
+// and here anonymous function is assigned to foreach so no name of function in 1st line of internally understanding of foreach where parameter is written directly 
+
+
+
+
+
 
 
 
