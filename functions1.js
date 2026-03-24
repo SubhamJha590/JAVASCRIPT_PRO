@@ -40,7 +40,7 @@ function add_three(a,b,c){
 /*
 In function parameters, you do NOT use any reserved keywords (let, var, const) to declare variables.
 
-We don’t use let, var, or const for parameters because the function automatically creates those variables to receive input values function automatically declares that variables for receiving inputs that is not lik normal declartion of variable(like we declare new variable there we use let, var , const).
+We don’t use let, var, or const for parameters because the function automatically creates those variables to receive input values function automatically declares that variables for receiving inputs that is not like normal declartion of variable(like we declare new variable there we use let, var , const).
 
 ✅ Function parameters are automatically treated as local variables
 
@@ -119,7 +119,5 @@ let d=multiply_two(1000,29);
 console.log(d);
 // console.log(multi); this gives u error bcs it gives multi undefined bcs of its blocked scope 
 //console.log(p);  
-//here u get p is not defined bcs a is function parameters and they are local variables always alive inside the function they do not exist outside the function they are functioned scope
+//here u get p is not defined bcs a is function parameters and they are local variables always alive inside the function they do not exist outside the function they are functioned scope (parameters of the functions are automatically locally declared variable not required reserve keywords and they are of functioned scope)
 /*
-
-
