@@ -2,7 +2,7 @@
 // whenever u are declaraing variable without reserve keyword then they will treated as global variable even if u used it inside a function or loop then in that case we can print i outside the loop etc but if let i=1 then outside loop we cant print i
 
 // let have blocked scoped and const have also blocked scope but if declared outside block or normally then treated as global but cant attached to window like console.log(window.variablename); it will give undefined and var can attached  (studied later windows concept)
-// var have functioned scope or if declared outside a function then can be global scope even if u used inside loop(just need is that it should be outside the fn then can in inside in anything this is known as the meaning of functioned scope)treated as global
+// var have functioned scope or if declared outside a function then can be global scope even if u used inside loop(just need is that it should be outside the fn then can in inside in anything this is known as the meaning of only functioned scope)treated as global
 
 // The window is the global world → all global variables should live on window so thats why we attach variables to the window but this later on make conflicts like repition etc so now let,var.const used for clearing and maintaining the safer environment
 

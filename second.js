@@ -17,7 +17,7 @@ let null_first=null; // variable is decalred and value is null
 console.log(null_first);
 
 console.log("120"+1); // it will give 1201 means string concatenate with each other (+ operator does concatenation if any operand is a string.
-// The + operator performs string concatenation if either operand is a string, converting the other operand to a string. Other arithmetic operators like -, *, and / perform numeric coercion(is a type of type coercion) and return NaN if the string cannot be converted to a number.
+// The + operator performs string concatenation if either operand is a string, converting the other operand to a string. Other arithmetic operators like -, *, and / perform numeric coercion(is a type of type coercion) and return NaN if the string cannot be converted to a number means -,*,/ always try to convert datatypes into numbers but if not possible then it give Nan.
 
 // Type coercion(it is implicit in nature done by itself) in JavaScript is the automatic or manual conversion of a value from one data type to another. and it is done bydefault in the case of -,/,* )
 // type conversion(explicit) is manually 
