@@ -74,6 +74,8 @@ So forEach automatically calls print() and passes each element (1,2,3,4,5) as va
 
 
 
+
+
 // Instead of that we can direclty write the function inside for each with function name if use normally function we can define name or without name 
 arr.forEach(function print(val){
     console.log(val*val);
