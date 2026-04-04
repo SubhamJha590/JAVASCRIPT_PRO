@@ -4,7 +4,7 @@
 // JS is loaded into the page through a <script> tag.
 // Without HTML, there’s no webpage to show any result visually.
 
-// connsole is the area of browser on which js code run and we attach it with html and html is directly attached to browser so this is an indirect way to attach js with browser
+// console is the area of browser on which js code run and we attach it with html and html is directly attached to browser so this is an indirect way to attach js with browser
 
 
 // can use single or double quote for printing 

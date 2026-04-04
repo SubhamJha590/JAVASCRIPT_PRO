@@ -86,7 +86,7 @@ Does NOT return anything (returns undefined always whether u put any return stat
 You can only work with individual values, perform side effects (like printing, modifying external variables), but you cannot create a new array directly. */
 // ; Yes, exactly — for both forEach and map, adding a semicolon at the end is optional, because both are statements but use for good practice.
 
-arr.forEach(function (val){  // here also we can write like this no need to declare function name as it automatically calls inside internally 
+arr.forEach(function (val){  //here in the form of anonymous function we are using just passing the refrence of this anonymous function to foreach
     console.log(val*val);
 });
 
