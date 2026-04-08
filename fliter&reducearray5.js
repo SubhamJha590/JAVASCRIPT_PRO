@@ -32,6 +32,33 @@ let result1=arr.filter((val)=>{
 });
 console.log(result1);
 
+// this is how back of the things work deeply internally with inbuilt function of filter
+/* 
+let arr=[1,2,3,4,56,7,89,9];
+Array.prototype.myfilter=function(callback){
+    let result=[]; // for new array
+    for(let i=0;i<this.length;i++){
+        if(callback(this[i],i,this)){
+            result.push(this[i]);
+        }
+    }
+   return result;
+}
+
+function check(val){
+    if (val%2===0){
+        return true;
+    }
+}
+
+let result=arr.myfilter(check);
+console.log(result);
+✅ Main Rule (Correct)
+The if block runs when the condition evaluates to a truthy value
+✔ This rule is always followed in normal JavaScript usage.
+
+*/
+
 // reduce 
 // Purpose: Reduce the array to a single value (number, string, object, etc.) by applying a function to each element.
 // It executes a function on every element of an array and returns a single final value before that it have an accumulator and current value keep updating accumulator value updated after each iteration through the fn or assign value or updating again and again to accumulator after each returned value through iteration.
