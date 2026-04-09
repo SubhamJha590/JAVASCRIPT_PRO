@@ -20,9 +20,7 @@
 
 let arr=[1,2,3,4,5,6,7];
 let result=arr.filter((val)=>{
-   if(val%2===0){
-    return true;
-   }
+  return val%2===0;// it will return true for those which are divisble by 2 & here there is a use of anonymous arrow function
 });
 console.log(result);
 
@@ -44,11 +42,10 @@ Array.prototype.myfilter=function(callback){
     }
    return result;
 }
+   //This is a language rule,The if statement in JavaScript is defined like this:,Run the block only if the expression is truthy ✅ if automatically keeps only truthy values — this rule is built into JavaScript, not written manually
 
 function check(val){
-    if (val%2===0){
-        return true;
-    }
+    return val%2===0;
 }
 
 let result=arr.myfilter(check);
